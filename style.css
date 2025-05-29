@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+  --inter: "Inter", sans-serif;
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  --green: hsl(75, 94%, 57%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--off-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  background-color: var(--dark-grey);
+  font-family: var(--inter);
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 350px;
+  padding: 30px;
+  text-align: center;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+h2 {
+  /* font-size: 14px; */
+  font-weight: 700;
+  color: var(--white);
+  padding-bottom: 5px;
+}
+
+h5 {
+  /* font-size: 14px; */
+  font-weight: 400;
+  color: var(--green);
+  padding-bottom: 30px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white);
+ 
+}
+
+button {
+  font-weight: 600;
+  font-size: 14px;
+  background-color: var(--grey);
+  color: var(--white);
+  border-radius: 10px;
+  border: none;
+  width: 300px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+
+button:hover {
+  background-color: var(--green);
+  color: var(--dark-grey);
+}
+
+@media(min-width: 1440px){
+/* For desktop view */
+/* h2{
+  display: block;
+  color: aqua;
+} */
+}
+
+@media(max-width: 375px){
+/* For mobile view */
+/* h2{
+  display: block;
+  color: blue;
+} */
+ }
+
